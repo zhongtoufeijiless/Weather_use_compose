@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>天气App原型-首页</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gradient-to-b from-blue-400 to-blue-100 min-h-screen flex flex-col">
+  <!-- 顶部 -->
+  <div class="flex items-center justify-between px-4 py-3">
+    <button class="text-xl"><i class="fas fa-chevron-down"></i> <span id="city">北京</span></button>
+    <button class="text-xl"><i class="fas fa-cog"></i></button>
+  </div>
+  <!-- 中部天气信息 -->
+  <div class="flex flex-col items-center mt-4">
+    <div class="text-6xl font-bold">26°</div>
+    <div class="text-xl mt-2 flex items-center"><i class="fas fa-sun text-yellow-400 mr-2"></i> 晴</div>
+    <img src="https://cdn.jsdelivr.net/gh/erikflowers/weather-icons/svg/wi-day-sunny.svg" alt="weather icon" class="w-24 h-24 mt-4">
+    <div class="text-sm text-gray-500 mt-2">体感 27° | 优</div>
+  </div>
+  <!-- 生活指数 -->
+  <div class="mt-6 px-4">
+    <div class="flex space-x-4 overflow-x-auto">
+      <div class="flex flex-col items-center bg-white rounded-lg shadow px-3 py-2 min-w-[80px]">
+        <i class="fas fa-tshirt text-blue-400 text-2xl"></i>
+        <span class="text-xs mt-1">穿衣</span>
+        <span class="text-xs text-gray-500">适宜</span>
+      </div>
+      <div class="flex flex-col items-center bg-white rounded-lg shadow px-3 py-2 min-w-[80px]">
+        <i class="fas fa-sun text-yellow-400 text-2xl"></i>
+        <span class="text-xs mt-1">紫外线</span>
+        <span class="text-xs text-gray-500">较强</span>
+      </div>
+      <div class="flex flex-col items-center bg-white rounded-lg shadow px-3 py-2 min-w-[80px]">
+        <i class="fas fa-running text-green-400 text-2xl"></i>
+        <span class="text-xs mt-1">运动</span>
+        <span class="text-xs text-gray-500">适宜</span>
+      </div>
+    </div>
+  </div>
+  <!-- 气温/降水曲线（占位） -->
+  <div class="mt-6 px-4">
+    <div class="bg-white rounded-lg shadow p-4 flex flex-col items-center">
+      <span class="text-xs text-gray-500 mb-2">气温/降水概率曲线</span>
+      <div class="w-full h-20 bg-gradient-to-r from-blue-200 to-blue-400 rounded"></div>
+    </div>
+  </div>
+  <!-- 未来预报 -->
+  <div class="mt-6 px-4 flex-1 overflow-y-auto">
+    <div class="bg-white rounded-lg shadow p-4">
+      <div class="flex justify-between text-xs text-gray-500 mb-2">
+        <span>未来24小时</span>
+        <span>未来7天</span>
+      </div>
+      <div class="flex space-x-4 overflow-x-auto">
+        <div class="flex flex-col items-center min-w-[60px]">
+          <span>14时</span>
+          <i class="fas fa-cloud-sun text-blue-400 text-xl"></i>
+          <span>25°</span>
+        </div>
+        <div class="flex flex-col items-center min-w-[60px]">
+          <span>15时</span>
+          <i class="fas fa-cloud-showers-heavy text-blue-400 text-xl"></i>
+          <span>23°</span>
+        </div>
+        <div class="flex flex-col items-center min-w-[60px]">
+          <span>16时</span>
+          <i class="fas fa-sun text-yellow-400 text-xl"></i>
+          <span>26°</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html> 

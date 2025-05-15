@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>设置</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gradient-to-b from-blue-400 to-blue-100 min-h-screen flex flex-col">
+  <!-- 顶部 -->
+  <div class="flex items-center justify-between px-4 py-3">
+    <button class="text-xl"><i class="fas fa-arrow-left"></i></button>
+    <div class="text-lg font-bold">设置</div>
+    <div class="w-6"></div>
+  </div>
+  <!-- 设置项 -->
+  <div class="flex-1 px-4 mt-4 space-y-4">
+    <div class="bg-white rounded-lg shadow p-4 flex items-center justify-between">
+      <div class="flex items-center space-x-2">
+        <i class="fas fa-thermometer-half text-blue-400"></i>
+        <span>温度单位</span>
+      </div>
+      <select class="border rounded px-2 py-1">
+        <option>℃</option>
+        <option>℉</option>
+      </select>
+    </div>
+    <div class="bg-white rounded-lg shadow p-4 flex items-center justify-between">
+      <div class="flex items-center space-x-2">
+        <i class="fas fa-wind text-blue-400"></i>
+        <span>风速单位</span>
+      </div>
+      <select class="border rounded px-2 py-1">
+        <option>m/s</option>
+        <option>km/h</option>
+        <option>mph</option>
+      </select>
+    </div>
+    <div class="bg-white rounded-lg shadow p-4 flex items-center justify-between">
+      <div class="flex items-center space-x-2">
+        <i class="fas fa-moon text-yellow-400"></i>
+        <span>主题模式</span>
+      </div>
+      <select class="border rounded px-2 py-1">
+        <option>浅色</option>
+        <option>深色</option>
+        <option>自动</option>
+      </select>
+    </div>
+    <div class="bg-white rounded-lg shadow p-4 flex items-center justify-between">
+      <div class="flex items-center space-x-2">
+        <i class="fas fa-bell text-blue-400"></i>
+        <span>天气预警通知</span>
+      </div>
+      <label class="inline-flex items-center cursor-pointer">
+        <input type="checkbox" class="form-checkbox h-5 w-5 text-blue-600">
+        <span class="ml-2">开启</span>
+      </label>
+    </div>
+  </div>
+</body>
+</html> 
