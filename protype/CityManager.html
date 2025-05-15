@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>城市管理</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gradient-to-b from-blue-400 to-blue-100 min-h-screen flex flex-col">
+  <!-- 顶部 -->
+  <div class="flex items-center justify-between px-4 py-3">
+    <button class="text-xl"><i class="fas fa-arrow-left"></i></button>
+    <div class="text-lg font-bold">城市管理</div>
+    <button class="text-xl"><i class="fas fa-plus"></i></button>
+  </div>
+  <!-- 搜索框 -->
+  <div class="px-4 mt-2">
+    <input type="text" placeholder="搜索城市" class="w-full px-3 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-300">
+  </div>
+  <!-- 城市列表 -->
+  <div class="flex-1 overflow-y-auto px-4 mt-4">
+    <ul class="space-y-2">
+      <li class="flex items-center justify-between bg-white rounded-lg shadow px-4 py-3">
+        <div class="flex items-center space-x-2">
+          <i class="fas fa-map-marker-alt text-blue-500"></i>
+          <span>北京</span>
+          <span class="ml-2 text-xs text-white bg-blue-400 rounded px-2 py-0.5">定位</span>
+        </div>
+        <div class="flex items-center space-x-2">
+          <button><i class="fas fa-arrow-up text-gray-400"></i></button>
+          <button><i class="fas fa-arrow-down text-gray-400"></i></button>
+          <button><i class="fas fa-trash text-red-400"></i></button>
+        </div>
+      </li>
+      <li class="flex items-center justify-between bg-white rounded-lg shadow px-4 py-3">
+        <div class="flex items-center space-x-2">
+          <i class="fas fa-city text-gray-400"></i>
+          <span>上海</span>
+        </div>
+        <div class="flex items-center space-x-2">
+          <button><i class="fas fa-arrow-up text-gray-400"></i></button>
+          <button><i class="fas fa-arrow-down text-gray-400"></i></button>
+          <button><i class="fas fa-trash text-red-400"></i></button>
+        </div>
+      </li>
+      <li class="flex items-center justify-between bg-white rounded-lg shadow px-4 py-3">
+        <div class="flex items-center space-x-2">
+          <i class="fas fa-city text-gray-400"></i>
+          <span>广州</span>
+        </div>
+        <div class="flex items-center space-x-2">
+          <button><i class="fas fa-arrow-up text-gray-400"></i></button>
+          <button><i class="fas fa-arrow-down text-gray-400"></i></button>
+          <button><i class="fas fa-trash text-red-400"></i></button>
+        </div>
+      </li>
+    </ul>
+  </div>
+</body>
+</html> 

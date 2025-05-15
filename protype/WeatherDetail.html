@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>天气详情</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gradient-to-b from-blue-400 to-blue-100 min-h-screen flex flex-col">
+  <!-- 顶部 -->
+  <div class="flex items-center justify-between px-4 py-3">
+    <button class="text-xl"><i class="fas fa-arrow-left"></i></button>
+    <div class="text-lg font-bold">天气详情</div>
+    <div class="w-6"></div>
+  </div>
+  <!-- 详细气象数据 -->
+  <div class="px-4 mt-4 space-y-4">
+    <div class="bg-white rounded-lg shadow p-4 grid grid-cols-2 gap-4">
+      <div class="flex items-center space-x-2"><i class="fas fa-wind text-blue-400"></i><span>风力</span><span class="ml-auto">3级</span></div>
+      <div class="flex items-center space-x-2"><i class="fas fa-tint text-blue-400"></i><span>湿度</span><span class="ml-auto">60%</span></div>
+      <div class="flex items-center space-x-2"><i class="fas fa-tachometer-alt text-blue-400"></i><span>气压</span><span class="ml-auto">1012 hPa</span></div>
+      <div class="flex items-center space-x-2"><i class="fas fa-eye text-blue-400"></i><span>能见度</span><span class="ml-auto">10 km</span></div>
+      <div class="flex items-center space-x-2"><i class="fas fa-sun text-yellow-400"></i><span>日出</span><span class="ml-auto">05:30</span></div>
+      <div class="flex items-center space-x-2"><i class="fas fa-moon text-blue-400"></i><span>日落</span><span class="ml-auto">19:10</span></div>
+    </div>
+    <!-- 数据可视化（占位） -->
+    <div class="bg-white rounded-lg shadow p-4 flex flex-col items-center">
+      <span class="text-xs text-gray-500 mb-2">气温/降水/风速历史曲线</span>
+      <div class="w-full h-24 bg-gradient-to-r from-blue-200 to-blue-400 rounded"></div>
+    </div>
+    <!-- 历史天气/极端天气记录 -->
+    <div class="bg-white rounded-lg shadow p-4">
+      <div class="text-sm font-bold mb-2">历史天气</div>
+      <ul class="text-xs text-gray-600 space-y-1">
+        <li>2024-06-01：最高 32° 最低 22° 晴</li>
+        <li>2024-05-31：最高 28° 最低 20° 小雨</li>
+        <li>2024-05-30：最高 30° 最低 21° 多云</li>
+      </ul>
+      <div class="text-sm font-bold mt-4 mb-2">极端天气记录</div>
+      <ul class="text-xs text-red-500 space-y-1">
+        <li>2024-05-15：暴雨预警</li>
+        <li>2024-04-28：高温橙色预警</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html> 
