@@ -8,15 +8,16 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.example.composedemo.viewmodel.CityViewModel
+import com.example.composedemo.ui.components.CityListItem
 
 @Composable
 fun CityScreen(viewModel: CityViewModel = hiltViewModel()) {
     Column(modifier = Modifier.fillMaxSize().padding(16.dp)) {
         Text(text = "城市管理", style = MaterialTheme.typography.titleLarge)
         Spacer(modifier = Modifier.height(16.dp))
-        // 假数据列表
-        repeat(3) { idx ->
-            Text(text = "城市 ${idx+1}", modifier = Modifier.padding(vertical = 8.dp))
+        // 城市列表
+        viewModel.cityList.forEach { city ->
+            CityListItem(cityName = city)
         }
     }
 }
@@ -24,5 +25,6 @@ fun CityScreen(viewModel: CityViewModel = hiltViewModel()) {
 @Preview(showBackground = true)
 @Composable
 fun CityScreenPreview() {
-    CityScreen(viewModel = CityViewModel())
+    val fakeViewModel = CityViewModel()
+    CityScreen(viewModel = fakeViewModel)
 } 
