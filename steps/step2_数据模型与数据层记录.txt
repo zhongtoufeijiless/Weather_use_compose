@@ -1,0 +1,21 @@
+# 第二阶段：数据模型与数据层 记录
+
+## 1. 设计与实现
+- 参考《技术架构.md》与原型，梳理核心数据模型：
+  - WeatherData
+  - City
+  - Settings
+  - ForecastData
+  - WeatherHistory
+  - ExtremeWeather
+- 在 app/src/main/java/com/example/composedemo/data/model/ 目录下实现上述数据类。
+
+## 2. 单元测试
+- 为每个数据模型编写了基础单元测试，验证数据类的创建和属性赋值。
+- 运行 `./gradlew test`，所有测试均通过。
+- 后续仅对有实际业务逻辑的代码编写测试，简单数据类不再机械性测试。
+
+## 3. 结论
+- 核心数据模型已实现并可用。
+- 结构清晰，便于后续数据库、网络、UI等各层集成。
+- 下一步可进行本地数据库（Room）相关代码实现。 

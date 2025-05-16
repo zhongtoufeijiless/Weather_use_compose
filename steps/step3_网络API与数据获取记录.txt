@@ -1,0 +1,38 @@
+# 第三阶段：网络API与数据获取 记录
+
+## 1. 目录与文件结构
+- data/api/WeatherApi.kt（接口定义）
+- data/api/WeatherApiImpl.kt（接口实现，后续可Mock/真实切换）
+- data/api/ApiResult.kt（统一网络返回/异常处理）
+- data/api/MockWeatherApi.kt（Mock能力预留）
+- data/datasource/WeatherRemoteDataSource.kt（远程数据源接口）
+- data/datasource/WeatherRemoteDataSourceImpl.kt（远程数据源实现）
+
+## 2. 设计说明
+- WeatherApi 只定义接口方法，不涉及实现细节。
+- ApiResult 用于统一网络层的成功/失败/异常封装。
+- 预留 MockWeatherApi，便于后续 UI 独立开发和测试。
+- Retrofit、序列化等配置文件后续补充。
+
+## 3. 前端接口定义说明（便于后端参考）
+- getWeather(city: String): WeatherData
+- getForecast(city: String): List<ForecastData>
+- getWeatherHistory(city: String): List<WeatherHistory>
+- getExtremeWeather(city: String): List<ExtremeWeather>
+- getCities(): List<City>
+- addCity(city: City)
+- removeCity(cityId: String)
+- getSettings(): Settings
+- updateSettings(settings: Settings)
+
+### 主要数据结构
+- WeatherData(city, temperature, weather, humidity, windSpeed, updateTime)
+- ForecastData(date, temperatureHigh, temperatureLow, weather)
+- WeatherHistory(date, temperature, weather)
+- ExtremeWeather(date, event, description)
+- City(id, name, latitude, longitude)
+- Settings(temperatureUnit, language, notificationsEnabled)
+
+## 4. 后续计划
+- 等待接口实现和网络逻辑补充。
+- 完成后可进行网络层单元测试和Mock测试。 
