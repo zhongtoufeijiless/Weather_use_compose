@@ -1,0 +1,66 @@
+# SVG 图标下载地址清单
+# 说明：请根据界面需求，将需要的 SVG 图标名称与下载链接填写在下方，后续统一下载。
+
+# 首页（HomeScreen）
+ic_weather_sun.svg  https://www.svgrepo.com/svg/13695/sun.svg  # 生成成功
+ic_weather_cloud_sun.svg  https://www.svgrepo.com/svg/13697/cloudy.svg  # 生成成功
+ic_weather_rain.svg  https://www.svgrepo.com/svg/13696/rain.svg  # 生成成功
+ic_life_running.svg  https://www.svgrepo.com/svg/312259/running.svg  # 生成成功
+ic_life_tshirt.svg  https://www.svgrepo.com/svg/312263/tshirt.svg  # 生成成功
+ic_chevron_down.svg  https://www.svgrepo.com/svg/80156/chevron-down.svg  # 生成成功
+ic_settings.svg  https://www.svgrepo.com/svg/13683/settings.svg  # 生成成功
+ic_sun.svg  https://www.svgrepo.com/svg/13695/sun.svg  # 生成成功
+ic_tshirt.svg  https://www.svgrepo.com/svg/312263/tshirt.svg  # 生成成功
+ic_running.svg  https://www.svgrepo.com/svg/312259/running.svg  # 生成成功
+ic_cloud_sun.svg  https://www.svgrepo.com/svg/13697/cloudy.svg  # 生成成功
+ic_cloud_showers_heavy.svg  https://www.svgrepo.com/svg/13696/rain.svg  # 生成成功
+
+# 城市管理页（CityScreen）
+ic_city_add.svg  https://www.svgrepo.com/svg/5125/plus.svg  # 生成成功
+ic_city_delete.svg  https://www.svgrepo.com/svg/5127/trash.svg  # 生成成功
+ic_city_location.svg  https://www.svgrepo.com/svg/13693/location.svg  # 生成成功
+ic_city_selected.svg  https://www.svgrepo.com/svg/13691/check.svg  # 生成成功
+ic_arrow_left.svg  https://www.svgrepo.com/svg/80144/arrow-left.svg  # 生成成功
+ic_plus.svg  https://www.svgrepo.com/svg/5125/plus.svg  # 生成成功
+ic_map_marker.svg  https://www.svgrepo.com/svg/13693/location.svg  # 生成成功
+ic_arrow_up.svg  https://www.svgrepo.com/svg/80147/arrow-up.svg  # 生成成功
+ic_arrow_down.svg  https://www.svgrepo.com/svg/80146/arrow-down.svg  # 生成成功
+ic_trash.svg  https://www.svgrepo.com/svg/5127/trash.svg  # 生成成功
+ic_city.svg  https://www.svgrepo.com/svg/13692/city.svg  # 生成成功
+
+# 天气详情页（DetailScreen）
+ic_detail_temperature.svg  https://www.svgrepo.com/svg/13695/sun.svg  # 生成成功
+ic_detail_humidity.svg  https://www.svgrepo.com/svg/13698/humidity.svg  # 生成成功
+ic_detail_wind.svg  https://www.svgrepo.com/svg/13699/wind.svg  # 生成成功
+ic_detail_uv.svg  https://www.svgrepo.com/svg/13695/sun.svg  # 生成成功
+ic_detail_air_quality.svg  https://www.svgrepo.com/svg/13694/air-quality.svg  # 生成成功
+ic_detail_sunrise.svg  https://www.svgrepo.com/svg/13695/sun.svg  # 生成成功
+ic_detail_sunset.svg  https://www.svgrepo.com/svg/13695/sun.svg  # 生成成功
+ic_detail_rain.svg  https://www.svgrepo.com/svg/13696/rain.svg  # 生成成功
+ic_detail_cloud.svg  https://www.svgrepo.com/svg/13697/cloudy.svg  # 生成成功
+ic_arrow_left.svg  https://www.svgrepo.com/svg/80144/arrow-left.svg  # 生成成功
+ic_wind.svg  https://www.svgrepo.com/svg/13699/wind.svg  # 生成成功
+ic_tint.svg  https://www.svgrepo.com/svg/13698/humidity.svg  # 生成成功
+ic_tachometer.svg  https://www.svgrepo.com/svg/13690/tachometer.svg  # 生成成功
+ic_eye.svg  https://www.svgrepo.com/svg/13689/eye.svg  # 生成成功
+ic_sun.svg  https://www.svgrepo.com/svg/13695/sun.svg  # 生成成功
+ic_moon.svg  https://www.svgrepo.com/svg/13688/moon.svg  # 生成成功
+
+# 设置页（SettingsScreen）
+ic_settings_theme.svg  https://www.svgrepo.com/svg/13688/moon.svg  # 生成成功
+ic_settings_language.svg  https://www.svgrepo.com/svg/13687/language.svg  # 生成成功
+ic_settings_about.svg  https://www.svgrepo.com/svg/13686/info.svg  # 生成成功
+ic_settings_feedback.svg  https://www.svgrepo.com/svg/13685/feedback.svg  # 生成成功
+ic_settings_update.svg  https://www.svgrepo.com/svg/13684/update.svg  # 生成成功
+ic_thermometer.svg  https://www.svgrepo.com/svg/13683/thermometer.svg  # 生成成功
+ic_wind.svg  https://www.svgrepo.com/svg/13699/wind.svg  # 生成成功
+ic_moon.svg  https://www.svgrepo.com/svg/13688/moon.svg  # 生成成功
+ic_bell.svg  https://www.svgrepo.com/svg/13682/bell.svg  # 生成成功
+
+# 导航/通用
+ic_nav_home.svg  https://www.svgrepo.com/svg/13681/home.svg  # 生成成功
+ic_nav_city.svg  https://www.svgrepo.com/svg/13692/city.svg  # 生成成功
+ic_nav_detail.svg  https://www.svgrepo.com/svg/13686/info.svg  # 生成成功
+ic_nav_settings.svg  https://www.svgrepo.com/svg/13683/settings.svg  # 生成成功
+ic_home.svg  https://www.svgrepo.com/svg/13681/home.svg  # 生成成功
+ic_info_circle.svg  https://www.svgrepo.com/svg/13686/info.svg  # 生成成功 

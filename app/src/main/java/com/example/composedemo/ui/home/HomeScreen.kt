@@ -24,9 +24,10 @@ import androidx.compose.ui.unit.sp
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.example.composedemo.viewmodel.HomeViewModel
 import com.example.composedemo.ui.theme.ComposedemoTheme
+import androidx.navigation.NavHostController
 
 @Composable
-fun HomeScreen(viewModel: HomeViewModel = hiltViewModel()) {
+fun HomeScreen(navController: NavHostController? = null, viewModel: HomeViewModel = hiltViewModel()) {
     val weather = viewModel.weather.collectAsState().value
     val lifeIndex = viewModel.lifeIndex.collectAsState().value
     val hourForecast = viewModel.hourForecast.collectAsState().value

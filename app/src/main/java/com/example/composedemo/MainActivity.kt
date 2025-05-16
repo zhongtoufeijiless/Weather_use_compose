@@ -12,8 +12,10 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.composedemo.ui.theme.ComposedemoTheme
-import com.example.composedemo.ui.home.HomeScreen
 import dagger.hilt.android.AndroidEntryPoint
+import com.example.composedemo.ui.navigation.AppNavGraph
+import com.example.composedemo.ui.navigation.BottomNavigationBar
+import androidx.navigation.compose.rememberNavController
 
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {
@@ -22,8 +24,12 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             ComposedemoTheme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    HomeScreen()
+                val navController = rememberNavController()
+                Scaffold(
+                    modifier = Modifier.fillMaxSize(),
+                    bottomBar = { BottomNavigationBar(navController) }
+                ) { innerPadding ->
+                    AppNavGraph(navController = navController, modifier = Modifier.padding(innerPadding))
                 }
             }
         }
